@@ -24,6 +24,7 @@ namespace ServiceProvider.Api.Controllers
                 .Where(x => x.Id == id)
                 .FirstOrDefaultAsync();
 
+
             if(serviceProvider is null)
             {
                 return NotFound();
